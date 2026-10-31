@@ -1,0 +1,12 @@
+---
+kind: Pod
+apiVersion: v1
+metadata:
+  name: nginx-pod
+  labels:
+    app: nginx
+  namespace: fe
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:latest
